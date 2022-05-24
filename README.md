@@ -1,6 +1,6 @@
 ## Answer Spor
 
-İnternet programlama dersi ödevi.
+# İnternet programlama dersi ödevi.
 
 İsmail Keyvan 201913171030 
 
