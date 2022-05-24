@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer Spor</title>
+    <meta name="keywords" content="Football,Basketball,Volleyball,Spor" />
+    <meta name="description" content="spor,leagu,game" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--Mobile -->
+    <link rel="stylesheet" media="(max-width:900px)" href="css/mobile.css" />
+ 
+    <script src="/js/navigator.js"></script>
+    <script src="/js/champions_league.js"></script>
+    <script src="/js/super_league.js"></script>
+    <script src="/js/super_league_games.js"></script>
+    <script src="/js/nba.js"></script>
+    <script src="/js/hockey.js"></script>
+
+ 
+
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar_header">
+      <div class="container">
+        <nav id="navbar">
+          <h1 class="heading-big">
+            Answer
+            <img src="/images/icon.png" alt="" width="33" height="33" /> Spor
+          </h1>
+
+          <ul style="justify-content: center;">
+            <li class="navbar_item">
+              <a onclick="football()">
+                <i class="fas fa-futbol"></i> Football</a
+              >
+            </li>
+            <li class="navbar_item">
+              <a onclick="basketball()">
+                <i class="fas fa-baseball-ball"></i> Basketball</a
+              >
+            </li>
+            <li class="navbar_item">
+              <a onclick="hockey()">
+                <i class="fas fa-hockey-puck"></i> Hockey</a
+              >
+            </li>
+          </ul>
+
+          <a class="heading-small navbar_item" href="https://www.linkedin.com/in/ismail-keyvan/">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <hr />
+
+     <!-- football -->
+    <div class="tables"  id="football">
+      <br />
+
+      <!-- champions league -->
+      <div
+        class="league_header"
+        id="champions_league_header_id"
+        onclick="showChampions()"
+      >
+        <h1 class="table_header">Champions League</h1>
+      </div>
+      <div class="groups" id="groups_id">
+        <div class="group">
+          <h1 class="table_header">Group A</h1>
+          <table id="table1">
+            <tr class="col">
+              <th>#</th>
+              <th>Team</th>
+              <th>GP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>PTS</th>
+            </tr>
+
+          </table>
+        </div>
+
+        <div class="group">
+          <h1 class="table_header">Group B</h1>
+          <table id="table2">
+            <tr class="col">
+              <th>#</th>
+              <th>Team</th>
+              <th>GP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>PTS</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="group">
+          <h1 class="table_header">Group C</h1>
+          <table id="table3">
+            <tr class="col">
+              <th>#</th>
+              <th>Team</th>
+              <th>GP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>PTS</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="group">
+          <h1 class="table_header">Group D</h1>
+          <table id="table4">
+            <tr class="col">
+              <th>#</th>
+              <th>Team</th>
+              <th>GP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>PTS</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a class="table_header" id="comments" href="http://localhost:5000/commentspage">COMMENTS</a>
+      
+
+      <br />
+
+      <!-- super league -->
+      <div
+        class="league_header"
+        id="super_league_header_id"
+        onclick="showSuperLeague()"
+      >
+        <h1 class="table_header">Super League</h1>
+      </div>
+      <div class="table_bg">
+        <table id="super_league_table">
+          <tr class="col" >
+            <th>#</th>
+            <th>Team</th>
+            <th>GP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>PTS</th>
+          </tr>
+        </table>
+        
+      </div>
+      <a class="table_header" id="comments" href="http://localhost:5000/commentspage">COMMENTS</a>
+
+      <br />
+
+      <!-- super league games -->
+      <div
+        class="league_header"
+        id="super_league_games_header_id"
+        onclick="showSuperLeagueGames()"
+      >
+        <h1 class="table_header">Super League Games</h1>
+      </div>
+      <div class="table_bg">
+        <!-- group -->
+        <table id="super_league_games_table">
+          <tr class="col">
+            <th>Team</th>
+            <th>Score</th>
+            <th>Team</th>
+            <th>Date</th>
+          </tr>
+
+        </table>
+      </div>
+      <a class="table_header" id="comments" href="http://localhost:5000/commentspage">COMMENTS</a>
+    </div>
+
+    <!-- basketball -->
+    <div class="tables"  id="basketball">
+      <br />
+      <!-- nba -->
+      <div
+        class="league_header"
+        id="nba_header_id"
+        onclick="showNBA()"
+      >
+        <h1 class="table_header">NBA (West)</h1>
+      </div>
+      <div class="table_bg">
+        <!-- group -->
+        <table id="nba_table">
+          <tr class="col" id="">
+            <th>#</th>
+            <th>Team</th>
+            <th>W</th>
+            <th>L</th>
+            <th>Per</th>
+          </tr>
+
+        </table>
+      </div>
+      <a class="table_header" id="comments" href="http://localhost:5000/commentspage">COMMENTS</a>
+
+    </div>
+
+     <!-- hockey -->
+     <div class="tables"  id="hockey">
+      <br />
+      <!-- league -->
+      <div
+        class="league_header"
+        id="hockey_header_id"
+        onclick="showHockey()"
+      >
+        <h1 class="table_header">Hockey - Stanley Cup</h1>
+      </div>
+      <div class="table_bg">
+        <!-- group -->
+        <table id="hockey_table">
+          <tr class="col" id="">
+            <th>Team 1</th>
+            <th>Score</th>
+            <th>Score</th>
+            <th>Team 2</th>
+          </tr>
+
+        </table>
+      </div>
+      <a class="table_header" id="comments" href="http://localhost:5000/commentspage">COMMENTS</a>
+
+
+    </div>
+  </body>
+</html>
