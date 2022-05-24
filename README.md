@@ -4,4 +4,6 @@
 
 İsmail Keyvan 201913171030 
 
-![img](images/sample.jpeg)
+![img](public/images/sample.jpeg)
+![img](public/images/sample1.jpeg)
+
